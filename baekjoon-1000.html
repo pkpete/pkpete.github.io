@@ -19,8 +19,17 @@
     <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
     <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
 
-    <!-- custom.css-->
+    <!-- custom.css -->
     <link rel="stylesheet" type="text/css" href="/assets/built/custom.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- 웹 폰트 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+    <!-- syntax.css 추가 -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
 
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
@@ -47,8 +56,7 @@
     <meta property="og:site_name" content="IT Technical Training" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Baekjoon 알고리즘 - 1000번 c++" />
-    <meta property="og:description" content="이 글은 백준 문제
-" />
+    <meta property="og:description" content="이 글은 백준 문제 #include &lt;iostream&gt; using namespace std; int main() { int a, b; cin &gt;&gt; a &gt;&gt; b; if (a &gt; b) { cout &lt;&lt; &quot;&gt;&quot;; } else if (a &lt; b) cout &lt;&lt; &quot;&lt;&quot;; else cout &lt;&lt; &quot;==&quot;; } #include &lt;iostream&gt; using namespace std; int main() {" />
     <meta property="og:url" content="https://pkpete.github.io/baekjoon-1000" />
     <meta property="og:image" content="https://pkpete.github.io/assets/built/images/baekjoon.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -58,8 +66,7 @@
     <meta property="article:tag" content="Baekjoon" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Baekjoon 알고리즘 - 1000번 c++" />
-    <meta name="twitter:description" content="이 글은 백준 문제
-" />
+    <meta name="twitter:description" content="이 글은 백준 문제 #include &lt;iostream&gt; using namespace std; int main() { int a, b; cin &gt;&gt; a &gt;&gt; b; if (a &gt; b) { cout &lt;&lt; &quot;&gt;&quot;; } else if (a &lt; b) cout &lt;&lt; &quot;&lt;&quot;; else cout &lt;&lt; &quot;==&quot;; } #include &lt;iostream&gt; using namespace std; int main() {" />
     <meta name="twitter:url" content="https://pkpete.github.io/" />
     <meta name="twitter:image" content="https://pkpete.github.io/assets/built/images/baekjoon.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -91,8 +98,7 @@
         "@type": "WebPage",
         "@id": "https://pkpete.github.io/baekjoon-1000"
     },
-    "description": "이 글은 백준 문제
-"
+    "description": "이 글은 백준 문제 #include &lt;iostream&gt; using namespace std; int main() { int a, b; cin &gt;&gt; a &gt;&gt; b; if (a &gt; b) { cout &lt;&lt; &quot;&gt;&quot;; } else if (a &lt; b) cout &lt;&lt; &quot;&lt;&quot;; else cout &lt;&lt; &quot;==&quot;; } #include &lt;iostream&gt; using namespace std; int main() {"
 }
     </script>
 
@@ -148,7 +154,7 @@ into the {body} of the default.hbs template -->
             
         </div>
         
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+            <a class="subscribe-button" href="#subscribe">Search</a>
         
     </div>
 </nav>
@@ -190,6 +196,36 @@ into the {body} of the default.hbs template -->
                 <div class="kg-card-markdown">
                     <p>이 글은 백준 문제</p>
 
+<noscript><pre>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	if (a &gt; b) {
+		cout &lt;&lt; &quot;&gt;&quot;;
+	}
+	else if (a &lt; b)
+		cout &lt;&lt; &quot;&lt;&quot;;
+	else cout &lt;&lt; &quot;==&quot;;
+}</pre></noscript>
+<script src="https://gist.github.com/pkpete/1f208a14596f3ccd1fbfc3776a610833.js"> </script>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
+	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="n">b</span><span class="p">;</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"&gt;"</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span>
+		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"&lt;"</span><span class="p">;</span>
+	<span class="k">else</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"=="</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
                 </div>
             </section>
 
@@ -198,16 +234,25 @@ into the {body} of the default.hbs template -->
                 <section class="subscribe-form">
                     <h3 class="subscribe-form-title">Subscribe to IT Technical Training</h3>
                     <p>Get the latest posts delivered right to your inbox</p>
-                    <form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+                    <span id="searchform" method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  />
+    <input class="location" type="hidden" name="location"  />
+    <input class="referrer" type="hidden" name="referrer"  />
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+        <input class="subscribe-email" onkeyup="myFunc()" 
+            id="searchtext" type="text" name="searchtext"  
+            placeholder="Search..." />
     </div>
-    <button class="" type="submit" disabled><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
-</form>
-
+    <script type="text/javascript">
+        function myFunc() {
+            if(event.keyCode == 13) {
+                var url = encodeURIComponent($("#searchtext").val());
+                location.href = "/search.html?query=" + url;
+            }
+        }
+    </script>
+</span>
                 </section>
             
             -->
@@ -396,32 +441,42 @@ into the {body} of the default.hbs template -->
 
     <!-- The big email subscribe modal content -->
     
-        <div id="subscribe" class="subscribe-overlay">
-            <a class="subscribe-overlay-close" href="#"></a>
-            <div class="subscribe-overlay-content">
-                
-                <h1 class="subscribe-overlay-title">Subscribe to IT Technical Training</h1>
-                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
-                <form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+    <div id="subscribe" class="subscribe-overlay">
+        <a class="subscribe-overlay-close" href="#"></a>
+        <div class="subscribe-overlay-content">
+            
+            <h1 class="subscribe-overlay-title">Search IT Technical Training</h1>
+            <p class="subscribe-overlay-description">
+            검색할 키워드를 입력하시오 </p>
+            <span id="searchform" method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  />
+    <input class="location" type="hidden" name="location"  />
+    <input class="referrer" type="hidden" name="referrer"  />
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+        <input class="subscribe-email" onkeyup="myFunc()" 
+            id="searchtext" type="text" name="searchtext"  
+            placeholder="Search..." />
     </div>
-    <button class="" type="submit" disabled><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
-</form>
-
-            </div>
+    <script type="text/javascript">
+        function myFunc() {
+            if(event.keyCode == 13) {
+                var url = encodeURIComponent($("#searchtext").val());
+                location.href = "/search.html?query=" + url;
+            }
+        }
+    </script>
+</span>
         </div>
+    </div>
     
 
     <!-- highlight.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
     <script>$(document).ready(function() {
-      $('pre code').each(function(i, block) {
+    $('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
-      });
+    });
     });</script>
 
     <!-- jQuery + Fitvids, which makes all video embeds responsive -->

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> - Articles</title>
-    <description>IT 공부 블로그</description>
+    <description>공부, 일상</description>
     <link>
     https://pkpete.github.io</link>
     
@@ -17,6 +17,20 @@
         <link>
         https://pkpete.github.io/programmers-1000</link>
         <guid isPermaLink="true">https://pkpete.github.io/programmers-1000</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>일상</title>
+        
+          <description>&lt;p&gt;DAILY LIFE&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 21 Jun 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://pkpete.github.io/baekjoon-1000</link>
+        <guid isPermaLink="true">https://pkpete.github.io/baekjoon-1000</guid>
       </item>
       
     

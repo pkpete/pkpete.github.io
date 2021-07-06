@@ -192,6 +192,15 @@ into the {body} of the default.hbs template -->
     }
     ,
     
+    "baekjoon-1759": {
+        "title": "Baekjoon 알고리즘 - 1759번 암호 만들기 c++",
+            "author": "pkpete",
+            "category": "",
+            "content": "1759번 암호 만들기문제 접근 법암호는 서로 다른 l개의 알파벳 소문자들로 구성되며 최소 한 개의 모음과 최소 두 개의 자음으로 구성되어 있다. 암호는 알파벳이 증가하는 순서로 배열되어있다.간단한 백트래킹 문제이다. 입력으로 받은 알파벳을 정렬을 하고 백트래킹으로 모든 경우의 암호를 만든다. 암호를 만들었을때 해당 자음과 모음의 개수를 확인하고 조건에 맞으면 answer 배열에 따로 저장한다.#include &lt;iostream&gt;#include &lt;string&gt;#include &lt;algorithm&gt;#include &lt;vector&gt;using namespace std;int l, c;vector&lt;string&gt; word, answer;string moeum = \"aeiou\";void make_password(int idx, int cnt, string pw) {\t// 원하는 크기의 비밀번호를 생성했으면\tif (cnt == l) {\t\tint cnt_moeum = 0, cnt_jaeum = pw.size();\t\t// 자음과 모음의 개수를 확인\t\tfor (int i = 0; i &lt; pw.size(); i++) {\t\t\tfor (int j = 0; j &lt; moeum.size(); j++) {\t\t\t\tif (pw[i] == moeum[j]) {\t\t\t\t\tcnt_moeum++;\t\t\t\t\tcnt_jaeum--;\t\t\t\t\tbreak;\t\t\t\t}\t\t\t}\t\t}\t\t// 자음과 모음의 조건이 맞으면 배열에 저장\t\tif (cnt_moeum &gt;= 1 &amp;&amp; cnt_jaeum &gt;= 2) {\t\t\tanswer.push_back(pw);\t\t}\t\treturn;\t}\tfor (int i = idx; i &lt; word.size(); i++) {\t\tmake_password(i + 1, cnt + 1, pw + word[i]);\t}}int main() {\tcin &gt;&gt; l &gt;&gt; c;\tfor (int i = 0; i &lt; c; i++) {\t\tstring str;\t\tcin &gt;&gt; str;\t\tword.push_back(str);\t}\tsort(word.begin(), word.end());\tstring tmp = \"\";\tmake_password(0, 0, tmp);\tfor (int i = 0; i &lt; answer.size(); i++)\t\tcout &lt;&lt; answer[i] &lt;&lt; endl;}",
+        "url": "/baekjoon-1759"
+    }
+    ,
+    
     "baekjoon-1039": {
         "title": "Baekjoon 알고리즘 - 1039번 교환 c++",
             "author": "pkpete",

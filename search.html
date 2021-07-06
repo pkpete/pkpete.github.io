@@ -183,8 +183,17 @@ into the {body} of the default.hbs template -->
 <script>
     window.store = {
     
+    "baekjoon-9663": {
+        "title": "Baekjoon 알고리즘 - 9663번 N-Queen c++",
+            "author": "pkpete",
+            "category": "",
+            "content": "9663번 N-Queen문제 접근 법N * N 크기의 체스판에서 N개의 퀸을 체스판 위에 놓을 수 있는 경우의 수를 출력하는 문제이다.N-Queen 문제는 백트래킹 기법을 사용하는 대표적인 문제이다.이차원 배열을 사용해서 사용할 수 있지만, 1차원 배열을 사용하여 풀었다. 1차원 배열을 사용 할 수 있는 이유는 퀸을 자리에 놓을때 서로 다른 행을 놓는다고 전제하에 하기 때문에 가능하다. 다시 말해 1차원 배열의 인덱스는 행을 의미한다.promising 함수에서 현재 놓여진 퀸이 제대로 된 자리에 있는지 확인을 한다. 같은 행에 위치해서는 안되고, 대각선에 위치해서 안된다.nqueen 함수는 현재 놓여진 퀸들이 적절하다면 다음 퀸을 순서대로 위치 시켜 재귀함수를 부른다. 놓여진 퀸들이 적절하지 않으면 나를 부른 함수로 돌아가 퀸의 위치를 옮긴다.#include &lt;iostream&gt;#include &lt;math.h&gt;using namespace std;int n, answer = 0;int map[16];bool promising(int cnt) {\tbool flag = true;\tint i = 1;\twhile (i &lt; cnt &amp;&amp; flag) {\t\t// 배열이 같은 값을 갖으면 같은 행임!!\t\t// 대각선에 위치해서는 안됨\t\tif (map[i] == map[cnt] || abs(map[i] - map[cnt]) == cnt - i) {\t\t\tflag = false;\t\t}\t\ti++;\t}\treturn flag;}void nqueen(int cnt) {\tif (promising(cnt)) {\t\tif (cnt == n) {\t\t\tanswer++;\t\t\treturn;\t\t}\t\telse {\t\t\tfor (int i = 1; i &lt;= n; i++) {\t\t\t\tmap[cnt + 1] = i;\t\t\t\tnqueen(cnt + 1);\t\t\t}\t\t}\t}}int main() {\tcin &gt;&gt; n;\tnqueen(0);\tcout &lt;&lt; answer;}",
+        "url": "/baekjoon-9663"
+    }
+    ,
+    
     "baekjoon-1039": {
-        "title": "Baekjoon 알고리즘 - 1039번 c++",
+        "title": "Baekjoon 알고리즘 - 1039번 교환 c++",
             "author": "pkpete",
             "category": "",
             "content": "1039 교환 문제문제 접근 법정수 N을 입력 받았을 때 K번의 횟수를 사용하여 각 자리에 있는 숫자의 위치를 바꾸는 문제이다. 자리를 바꿀 때의 조건은 i &lt; j 여야 한다!!문제에 대한 알고리즘은 이중 for문을 사용하여 각 자리에 있는 숫자를 바꾸고 이를 큐에 넣어 계속해서 확인한다.이렇게 단순하게 된다면 메모리 초과 문제를 맞이할 것이다. 이를 해결하기 위해 set 자료구조를 사용하여 이미 나온 숫자에 대해 큐에 넣지 않도록 하여 메모리 낭비를 막을 수 있다. 그리고 while문 1번 실행시 큐의 크기 만큼 반복해줘야 메모리 초과를 막을 수 있다.#include &lt;iostream&gt;#include &lt;queue&gt;#include &lt;algorithm&gt;#include &lt;string&gt;#include &lt;set&gt;using namespace std;int answer = -1;int main() {\tstring str; int k;\tcin &gt;&gt; str &gt;&gt; k;\tqueue&lt;pair&lt;int, string&gt;&gt; q;\tq.push(make_pair(0, str));\twhile (!q.empty()) {\t\tint qsize = q.size();\t\t// set 자료구조를 사용하여 이미 나온 숫자를 큐에 넣지 않도록 한다.\t\tset&lt;string&gt; visit;\t\t// 이게 중요함!!!\t\t// 현재 단계에서의 큐 사이즈 만큼 반복문\t\tfor (int l = 0; l &lt; qsize; l++) {\t\t\tstring num = q.front().second;\t\t\tint cnt = q.front().first;\t\t\tq.pop();\t\t\tif (cnt == k) {\t\t\t\tanswer = max(answer, stoi(num));\t\t\t\tcontinue;\t\t\t}\t\t\tfor (int i = 0; i &lt; num.size() - 1; i++) {\t\t\t\tfor (int j = i + 1; j &lt; num.size(); j++) {\t\t\t\t\tif (i == 0 &amp;&amp; num[j] == '0') continue;\t\t\t\t\tswap(num[i], num[j]);\t\t\t\t\t// set를 통해 이미 나온 수의 중복을 피한다\t\t\t\t\tif (visit.find(num) == visit.end()) {\t\t\t\t\t\tvisit.insert(num);\t\t\t\t\t\tq.push(make_pair(cnt + 1, num));\t\t\t\t\t}\t\t\t\t\tswap(num[i], num[j]);\t\t\t\t}\t\t\t}\t\t}\t}\tcout &lt;&lt; answer;} ",

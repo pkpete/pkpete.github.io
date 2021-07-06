@@ -183,6 +183,15 @@ into the {body} of the default.hbs template -->
 <script>
     window.store = {
     
+    "baekjoon-1039": {
+        "title": "Baekjoon 알고리즘 - 1039번 c++",
+            "author": "pkpete",
+            "category": "",
+            "content": "1039 교환 문제문제 접근 법정수 N을 입력 받았을 때 K번의 횟수를 사용하여 각 자리에 있는 숫자의 위치를 바꾸는 문제이다. 자리를 바꿀 때의 조건은 i &lt; j 여야 한다!!문제에 대한 알고리즘은 이중 for문을 사용하여 각 자리에 있는 숫자를 바꾸고 이를 큐에 넣어 계속해서 확인한다.이렇게 단순하게 된다면 메모리 초과 문제를 맞이할 것이다. 이를 해결하기 위해 set 자료구조를 사용하여 이미 나온 숫자에 대해 큐에 넣지 않도록 하여 메모리 낭비를 막을 수 있다. 그리고 while문 1번 실행시 큐의 크기 만큼 반복해줘야 메모리 초과를 막을 수 있다.#include &lt;iostream&gt;#include &lt;queue&gt;#include &lt;algorithm&gt;#include &lt;string&gt;#include &lt;set&gt;using namespace std;int answer = -1;int main() {\tstring str; int k;\tcin &gt;&gt; str &gt;&gt; k;\tqueue&lt;pair&lt;int, string&gt;&gt; q;\tq.push(make_pair(0, str));\twhile (!q.empty()) {\t\tint qsize = q.size();\t\t// set 자료구조를 사용하여 이미 나온 숫자를 큐에 넣지 않도록 한다.\t\tset&lt;string&gt; visit;\t\t// 이게 중요함!!!\t\t// 현재 단계에서의 큐 사이즈 만큼 반복문\t\tfor (int l = 0; l &lt; qsize; l++) {\t\t\tstring num = q.front().second;\t\t\tint cnt = q.front().first;\t\t\tq.pop();\t\t\tif (cnt == k) {\t\t\t\tanswer = max(answer, stoi(num));\t\t\t\tcontinue;\t\t\t}\t\t\tfor (int i = 0; i &lt; num.size() - 1; i++) {\t\t\t\tfor (int j = i + 1; j &lt; num.size(); j++) {\t\t\t\t\tif (i == 0 &amp;&amp; num[j] == '0') continue;\t\t\t\t\tswap(num[i], num[j]);\t\t\t\t\t// set를 통해 이미 나온 수의 중복을 피한다\t\t\t\t\tif (visit.find(num) == visit.end()) {\t\t\t\t\t\tvisit.insert(num);\t\t\t\t\t\tq.push(make_pair(cnt + 1, num));\t\t\t\t\t}\t\t\t\t\tswap(num[i], num[j]);\t\t\t\t}\t\t\t}\t\t}\t}\tcout &lt;&lt; answer;} ",
+        "url": "/baekjoon-1039"
+    }
+    ,
+    
     "dailylife1": {
         "title": "일상",
             "author": "pkpete",
@@ -198,15 +207,6 @@ into the {body} of the default.hbs template -->
             "category": "",
             "content": "이 글은 프로그래머스 문제",
         "url": "/programmers-1000"
-    }
-    ,
-    
-    "baekjoon-1000": {
-        "title": "Baekjoon 알고리즘 - 1000번 c++",
-            "author": "pkpete",
-            "category": "",
-            "content": "이 글은 백준 문제#include &lt;iostream&gt;using namespace std;int main() {\tint a, b;\tcin &gt;&gt; a &gt;&gt; b;\tif (a &gt; b) {\t\tcout &lt;&lt; &quot;&gt;&quot;;\t}\telse if (a &lt; b)\t\tcout &lt;&lt; &quot;&lt;&quot;;\telse cout &lt;&lt; &quot;==&quot;;}#include &lt;iostream&gt;using namespace std;int main() {\tint a, b;\tcin &gt;&gt; a &gt;&gt; b;\tif (a &gt; b) {\t\tcout &lt;&lt; \"&gt;\";\t}\telse if (a &lt; b)\t\tcout &lt;&lt; \"&lt;\";\telse cout &lt;&lt; \"==\";}",
-        "url": "/baekjoon-1000"
     }
     ,
     

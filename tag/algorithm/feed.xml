@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://pkpete.github.io/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://pkpete.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-06T11:37:39+09:00</updated>
+  <updated>2021-08-06T16:07:15+09:00</updated>
   <id>https://pkpete.github.io/tag/algorithm/feed.xml</id>
 
   
@@ -298,40 +298,6 @@
 
       
         <summary type="html">9663번 N-Queen</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Prgrammers 알고리즘 -</title>
-      <link href="https://pkpete.github.io/programmers-1000" rel="alternate" type="text/html" title="Prgrammers 알고리즘 -" />
-      <published>2021-06-21T00:00:00+09:00</published>
-      <updated>2021-06-21T00:00:00+09:00</updated>
-      <id>https://pkpete.github.io/programmers-1000</id>
-      <content type="html" xml:base="https://pkpete.github.io/programmers-1000">&lt;p&gt;이 글은 프로그래머스 문제&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>KO JAE UK</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="algorithm" />
-      
-
-      
-        <summary type="html">이 글은 프로그래머스 문제</summary>
       
 
       

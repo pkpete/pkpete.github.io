@@ -8,6 +8,28 @@
     
       
       <item>
+        <title>Week 1</title>
+        
+          <description>&lt;h1 id=&quot;week-1&quot;&gt;Week 1&lt;/h1&gt;
+&lt;h2 id=&quot;목차&quot;&gt;목차&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#day-01&quot;&gt;Day 01&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#day-02&quot;&gt;Day 02&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#day-03&quot;&gt;Day 03&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#day-04&quot;&gt;Day 04&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 06 Aug 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://pkpete.github.io/boostcamp</link>
+        <guid isPermaLink="true">https://pkpete.github.io/boostcamp</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Baekjoon 알고리즘 - 9663번 N-Queen c++</title>
         
           <description>&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/9663&quot;&gt;9663번 N-Queen&lt;/a&gt;&lt;/p&gt;
@@ -48,34 +70,6 @@
         <link>
         https://pkpete.github.io/baekjoon-1039</link>
         <guid isPermaLink="true">https://pkpete.github.io/baekjoon-1039</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>일상</title>
-        
-          <description>&lt;p&gt;DAILY LIFE&lt;/p&gt;
-</description>
-        
-        <pubDate>Mon, 21 Jun 2021 00:00:00 +0900</pubDate>
-        <link>
-        https://pkpete.github.io/dailylife1</link>
-        <guid isPermaLink="true">https://pkpete.github.io/dailylife1</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Prgrammers 알고리즘 -</title>
-        
-          <description>&lt;p&gt;이 글은 프로그래머스 문제&lt;/p&gt;
-</description>
-        
-        <pubDate>Mon, 21 Jun 2021 00:00:00 +0900</pubDate>
-        <link>
-        https://pkpete.github.io/programmers-1000</link>
-        <guid isPermaLink="true">https://pkpete.github.io/programmers-1000</guid>
       </item>
       
     

@@ -57,7 +57,7 @@
     <meta property="og:site_name" content="D A R K&nbsp; &nbsp;H O R S E" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Week 1" />
-    <meta property="og:description" content="Week 1 목차 Day 01 Day 02 Day 03 Day 04 Day 01 강의 복습 내용 [Python2-1] 변수 데이터을 저장하기 위한 메모리 공간 값은 메모리 주소에 할당된다 ex A = 8 .. A라는 이름을 가진 메모리 주소에 8을 저장하라 Dynamic Typing 다른 언어와 달리 파이썬은 코드 실행 시점에 데이터의 Type을" />
+    <meta property="og:description" content="Week 1 목차 Day 01 Day 02 Day 03 Day 04 Day 05 Day 01 강의 복습 내용 [Python2-1] 변수 데이터을 저장하기 위한 메모리 공간 값은 메모리 주소에 할당된다 ex) A = 8 .. A라는 이름을 가진 메모리 주소에 8을 저장하라 Dynamic Typing 다른 언어와 달리 파이썬은 코드 실행 시점에" />
     <meta property="og:url" content="https://pkpete.github.io/boostcamp" />
     <meta property="og:image" content="https://pkpete.github.io/assets/built/images/boostcamp.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -67,7 +67,7 @@
     <meta property="article:tag" content="Boostcamp" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Week 1" />
-    <meta name="twitter:description" content="Week 1 목차 Day 01 Day 02 Day 03 Day 04 Day 01 강의 복습 내용 [Python2-1] 변수 데이터을 저장하기 위한 메모리 공간 값은 메모리 주소에 할당된다 ex A = 8 .. A라는 이름을 가진 메모리 주소에 8을 저장하라 Dynamic Typing 다른 언어와 달리 파이썬은 코드 실행 시점에 데이터의 Type을" />
+    <meta name="twitter:description" content="Week 1 목차 Day 01 Day 02 Day 03 Day 04 Day 05 Day 01 강의 복습 내용 [Python2-1] 변수 데이터을 저장하기 위한 메모리 공간 값은 메모리 주소에 할당된다 ex) A = 8 .. A라는 이름을 가진 메모리 주소에 8을 저장하라 Dynamic Typing 다른 언어와 달리 파이썬은 코드 실행 시점에" />
     <meta name="twitter:url" content="https://pkpete.github.io/" />
     <meta name="twitter:image" content="https://pkpete.github.io/assets/built/images/boostcamp.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -99,7 +99,7 @@
         "@type": "WebPage",
         "@id": "https://pkpete.github.io/boostcamp"
     },
-    "description": "Week 1 목차 Day 01 Day 02 Day 03 Day 04 Day 01 강의 복습 내용 [Python2-1] 변수 데이터을 저장하기 위한 메모리 공간 값은 메모리 주소에 할당된다 ex A = 8 .. A라는 이름을 가진 메모리 주소에 8을 저장하라 Dynamic Typing 다른 언어와 달리 파이썬은 코드 실행 시점에 데이터의 Type을"
+    "description": "Week 1 목차 Day 01 Day 02 Day 03 Day 04 Day 05 Day 01 강의 복습 내용 [Python2-1] 변수 데이터을 저장하기 위한 메모리 공간 값은 메모리 주소에 할당된다 ex) A = 8 .. A라는 이름을 가진 메모리 주소에 8을 저장하라 Dynamic Typing 다른 언어와 달리 파이썬은 코드 실행 시점에"
 }
     </script>
 
@@ -203,6 +203,7 @@ into the {body} of the default.hbs template -->
   <li><a href="#day-02">Day 02</a></li>
   <li><a href="#day-03">Day 03</a></li>
   <li><a href="#day-04">Day 04</a></li>
+  <li><a href="#day-05">Day 05</a></li>
 </ul>
 
 <hr />
@@ -214,7 +215,10 @@ into the {body} of the default.hbs template -->
 <ul>
   <li>데이터을 저장하기 위한 메모리 공간</li>
   <li>값은 메모리 주소에 할당된다
-ex A = 8 .. A라는 이름을 가진 메모리 주소에 8을 저장하라</li>
+    <ul>
+      <li>ex) A = 8 .. A라는 이름을 가진 메모리 주소에 8을 저장하라</li>
+    </ul>
+  </li>
 </ul>
 
 <h6 id="dynamic-typing">Dynamic Typing</h6>
@@ -232,9 +236,12 @@ ex A = 8 .. A라는 이름을 가진 메모리 주소에 8을 저장하라</li>
   <li>Slicing
     <ul>
       <li>List의 값들을 잘라서 쓰는 것
-ex) alpha = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’]
-print(alpha[:]) #[‘a’, ‘b’, ‘c’, ‘d’, ‘e’]
-print(alpha[-4:])    #[‘b’, ‘c’, ‘d’, ‘e’]</li>
+        <ul>
+          <li>ex) alpha = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’]</li>
+          <li>print(alpha[:]) #[‘a’, ‘b’, ‘c’, ‘d’, ‘e’]</li>
+          <li>print(alpha[-4:])    #[‘b’, ‘c’, ‘d’, ‘e’]</li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>List의 연산
@@ -243,15 +250,30 @@ print(alpha[-4:])    #[‘b’, ‘c’, ‘d’, ‘e’]</li>
       <li>* : 반복</li>
       <li>len() : 리스트 길이</li>
       <li>append : 이어붙이기
-  ex) alpha.append(‘z’)</li>
+        <ul>
+          <li>ex) alpha.append(‘z’)</li>
+        </ul>
+      </li>
       <li>extend : 새로운 리스트 추가
-  ex) alpha.extend([‘z’])</li>
+        <ul>
+          <li>ex) alpha.extend([‘z’])</li>
+        </ul>
+      </li>
       <li>insert
-  ex) alpha.insert(0,’a’)</li>
+        <ul>
+          <li>ex) alpha.insert(0,’a’)</li>
+        </ul>
+      </li>
       <li>remove
-  ex) alpha.remove(‘z’)</li>
+        <ul>
+          <li>ex) alpha.remove(‘z’)</li>
+        </ul>
+      </li>
       <li>del
-  ex) del alpha[0]</li>
+        <ul>
+          <li>ex) del alpha[0]</li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
@@ -260,31 +282,30 @@ print(alpha[-4:])    #[‘b’, ‘c’, ‘d’, ‘e’]</li>
 <ul>
   <li>패킹 : 한 변수에 여러 개의 데이터를 넣는 것</li>
   <li>언패킹 : 한 변수의 데이터를 각각의 변수로 반환
-ex) t = [1,2,3]
-a, b, c = t</li>
+    <ul>
+      <li>ex) t = [1,2,3]</li>
+      <li>a, b, c = t</li>
+    </ul>
+  </li>
 </ul>
 
 <h5 id="python-2-2">[Python 2-2]</h5>
 <h6 id="함수">함수</h6>
 <ul>
-  <li>어떤 일을 수행하는 코드의 덩어리</li>
-  <li>def 함수이름 () :</li>
+  <li>어떤 일을 수행하는 코드의 덩어리
+<img src="https://i.imgur.com/BBBhccx.png" alt="" /></li>
 </ul>
 
 <h6 id="print-formatting">print formatting</h6>
 <ul>
   <li>%string, format 함수, fstring 중 fstring이 가장 깔끔!
-    <ul>
-      <li>fstring example <strong>**</strong><strong>**</strong><em>**</em></li>
-    </ul>
-  </li>
+<img src="https://i.imgur.com/jDc4ONT.png" alt="" /></li>
 </ul>
 
 <h5 id="python-2-3">[Python 2-3]</h5>
 <h6 id="조건문">조건문</h6>
 <ul>
   <li>어떤 일을 수행하는 코드의 덩어리</li>
-  <li>def 함수이름 () : <strong>**</strong>*****</li>
 </ul>
 
 <h6 id="반복문">반복문</h6>
@@ -293,9 +314,6 @@ a, b, c = t</li>
   <li>for문
     <ul>
       <li>range() 사용하기</li>
-      <li>
-        <hr />
-      </li>
     </ul>
   </li>
   <li>while문</li>
@@ -310,7 +328,9 @@ a, b, c = t</li>
       <li>Indexing</li>
       <li>Slicing</li>
       <li>덧셈 뺄셈 연산 가능</li>
-      <li>문자열 함수 <strong>**</strong><strong>**</strong>**</li>
+      <li>문자열 함수 
+  <img src="https://i.imgur.com/NJBFOuO.png" alt="" />
+  <img src="https://i.imgur.com/ghk5kpB.png" alt="" /></li>
     </ul>
   </li>
 </ul>
@@ -358,9 +378,6 @@ a, b, c = t</li>
   <li>집합 (Set)
     <ul>
       <li>값을 순서없이 저장, 중복 불허 하는 자료형</li>
-      <li>
-        <hr />
-      </li>
     </ul>
   </li>
   <li>사전 (Dictionary)
@@ -374,9 +391,6 @@ a, b, c = t</li>
   <li>Counter
     <ul>
       <li>Sequence type의 data element들의 개수를 dict 형태로 반환</li>
-      <li>
-        <hr />
-      </li>
     </ul>
   </li>
 </ul>
@@ -399,17 +413,11 @@ a, b, c = t</li>
     <ul>
       <li>기존 list를 사용해 다른 list를 만드는 기법</li>
       <li>for + append 보다 빠름</li>
-      <li>
-        <hr />
-      </li>
     </ul>
   </li>
   <li>enumerate
     <ul>
       <li>list의 element를 추출할 때 번호를 붙여서 추출</li>
-      <li>
-        <hr />
-      </li>
     </ul>
   </li>
   <li>zip
@@ -421,27 +429,57 @@ a, b, c = t</li>
     <ul>
       <li>개수가 정해지지 않은 변수를 함수의 파라미터로 사용하는 법</li>
       <li>* 기호를 사용하여 표시</li>
-      <li>
-        <hr />
-      </li>
     </ul>
   </li>
   <li>키워드 가변인자 (Keyword variable-length)
     <ul>
       <li>파라미터 이름을 따로 지정하지 않고 입력</li>
       <li>**기호를 사용하여 표시</li>
-      <li>
-        <hr />
-      </li>
     </ul>
   </li>
 </ul>
 
+<h5 id="ai-math-1">[AI Math 1]</h5>
+<h6 id="module">Module</h6>
+<ul>
+  <li></li>
+</ul>
+
+<h5 id="ai-math-2">[AI Math 2]</h5>
+<h6 id="module-1">Module</h6>
+<ul>
+  <li></li>
+</ul>
+
+<h5 id="ai-math-3">[AI Math 3]</h5>
+<h6 id="module-2">Module</h6>
+<ul>
+  <li></li>
+</ul>
+
+<h5 id="ai-math-4">[AI Math 4]</h5>
+<h6 id="module-3">Module</h6>
+<ul>
+  <li></li>
+</ul>
+
+<h5 id="ai-math-5">[AI Math 5]</h5>
+<h6 id="module-4">Module</h6>
+<ul>
+  <li></li>
+</ul>
+
+<h3 id="피어세션-정리-및-학습-회고-1">피어세션 정리 및 학습 회고</h3>
+<p>과제의 코드 리뷰를 통해 다른 조원분들이 파이썬 코드를 어떻게 짜는 지 보고 배울 수 있었다. 확실히 C++로만 코딩한 나보다 더 효율적으로 잘 짜신다. 보고 많이 배워야 될거같다! 파이썬의 모듈들을 빨리 알아 보고 정규표현도 공부해야된다. 수학은 역시나 어렵다…. 주말을 통해 다시 정리해야될거 같다</p>
+
+<hr />
+
+<h2 id="day-03">Day 03</h2>
+<h3 id="강의-복습-내용-2">강의 복습 내용</h3>
 <h5 id="python-4-1">[Python 4-1]</h5>
 <h6 id="클래스와-객체">클래스와 객체</h6>
 <ul>
   <li>속성(변수)과 행동(함수)을 갖는다</li>
-  <li><strong>**</strong><strong>**</strong>예시 사진</li>
   <li>__init__ : 객체 초기화 예약 함수</li>
   <li>__는 특수한 예약 함수나 변수로 사용</li>
   <li>Class 함수로 self를 반드시 추가해야된다</li>
@@ -458,195 +496,11 @@ a, b, c = t</li>
 </ul>
 
 <h5 id="python-4-2">[Python 4-2]</h5>
-<h6 id="module">Module</h6>
+<h6 id="module-5">Module</h6>
 <ul>
   <li>프로그램에서의 작은 프로그램 조각들, 모듈을 모아 하나의 큰 프로그램 개발</li>
   <li>import 문을 사용해서 모듈 호출
     <h6 id="package">Package</h6>
-  </li>
-  <li>모둘을 모아 놓은 단위, 하나의 프로그램</li>
-</ul>
-
-<h5 id="ai-math-1">[AI Math 1]</h5>
-<h6 id="module-1">Module</h6>
-<ul>
-  <li>
-    <h6 id="package-1">Package</h6>
-    <p>-</p>
-  </li>
-</ul>
-
-<h5 id="ai-math-2">[AI Math 2]</h5>
-<h6 id="module-2">Module</h6>
-<ul>
-  <li>
-    <h6 id="package-2">Package</h6>
-  </li>
-</ul>
-
-<h5 id="ai-math-3">[AI Math 3]</h5>
-<h6 id="module-3">Module</h6>
-<ul>
-  <li>
-    <h6 id="package-3">Package</h6>
-  </li>
-</ul>
-
-<h5 id="ai-math-4">[AI Math 4]</h5>
-<h6 id="module-4">Module</h6>
-<ul>
-  <li>
-    <h6 id="package-4">Package</h6>
-  </li>
-</ul>
-
-<h5 id="ai-math-5">[AI Math 5]</h5>
-<h6 id="module-5">Module</h6>
-<ul>
-  <li>
-    <h6 id="package-5">Package</h6>
-  </li>
-  <li></li>
-</ul>
-
-<h3 id="피어세션-정리-및-학습-회고-1">피어세션 정리 및 학습 회고</h3>
-<p>과제의 코드 리뷰를 통해 다른 조원분들이 파이썬 코드를 어떻게 짜는 지 보고 배울 수 있었다. 확실히 C++로만 코딩한 나보다 더 효율적으로 잘 짜신다. 보고 많이 배워야 될거같다! 파이썬의 모듈들을 빨리 알아 보고 정규표현도 공부해야된다. 수학은 역시나 어렵다…. 주말을 통해 다시 정리해야될거 같다</p>
-
-<hr />
-
-<h2 id="day-03">Day 03</h2>
-<h3 id="강의-복습-내용-2">강의 복습 내용</h3>
-<h5 id="python3-1-1">[Python3-1]</h5>
-<h6 id="자료-구조-1">자료 구조</h6>
-<ul>
-  <li>스택 (Stack)
-    <ul>
-      <li>리스트를 사용하여 스택 구현 가능</li>
-      <li>append(), pop()</li>
-    </ul>
-  </li>
-  <li>큐 (Queue)
-    <ul>
-      <li>리스트를 사용하여 큐 구현 가능</li>
-      <li>append(), pop(0)</li>
-    </ul>
-  </li>
-  <li>튜플 (Tuple)
-    <ul>
-      <li>값의 변경이 불가능한 리스트</li>
-      <li>선언 시 ‘()’를 사용</li>
-      <li>리스트의 특징과 동일하다 –&gt; 왜 쓸까??
-  프로그램을 작동하는 동안 변경되지 않은 데이터를 저장하기 위해!</li>
-    </ul>
-  </li>
-  <li>집합 (Set)
-    <ul>
-      <li>값을 순서없이 저장, 중복 불허 하는 자료형</li>
-      <li>
-        <hr />
-      </li>
-    </ul>
-  </li>
-  <li>사전 (Dictionary)
-    <ul>
-      <li>Key와 Value를 매칭하여 key로 value 검색</li>
-      <li>.items()</li>
-      <li>.keys()</li>
-      <li>.values()</li>
-    </ul>
-  </li>
-  <li>Counter
-    <ul>
-      <li>Sequence type의 data element들의 개수를 dict 형태로 반환</li>
-      <li>
-        <hr />
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h5 id="python-3-2-1">[Python 3-2]</h5>
-<h6 id="pythonic-code-1">Pythonic Code</h6>
-<ul>
-  <li>파이썬의 특유의 문법을 활용해 효율적으로 코드를 표현</li>
-  <li>split
-    <ul>
-      <li>string 값을 기준으로 나눠서 List 형태로 변환</li>
-    </ul>
-  </li>
-  <li>join
-    <ul>
-      <li>string으로 구성된 List를 합쳐 하나의 string으로 반환</li>
-    </ul>
-  </li>
-  <li>list comprehension
-    <ul>
-      <li>기존 list를 사용해 다른 list를 만드는 기법</li>
-      <li>for + append 보다 빠름</li>
-      <li>
-        <hr />
-      </li>
-    </ul>
-  </li>
-  <li>enumerate
-    <ul>
-      <li>list의 element를 추출할 때 번호를 붙여서 추출</li>
-      <li>
-        <hr />
-      </li>
-    </ul>
-  </li>
-  <li>zip
-    <ul>
-      <li>두 개의 list의 값을 병렬적으로 추출함</li>
-    </ul>
-  </li>
-  <li>가변인자 (variable-length)
-    <ul>
-      <li>개수가 정해지지 않은 변수를 함수의 파라미터로 사용하는 법</li>
-      <li>* 기호를 사용하여 표시</li>
-      <li>
-        <hr />
-      </li>
-    </ul>
-  </li>
-  <li>키워드 가변인자 (Keyword variable-length)
-    <ul>
-      <li>파라미터 이름을 따로 지정하지 않고 입력</li>
-      <li>**기호를 사용하여 표시</li>
-      <li>
-        <hr />
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h5 id="python-4-1-1">[Python 4-1]</h5>
-<h6 id="클래스와-객체-1">클래스와 객체</h6>
-<ul>
-  <li>속성(변수)과 행동(함수)을 갖는다</li>
-  <li><strong>**</strong><strong>**</strong>예시 사진</li>
-  <li>__init__ : 객체 초기화 예약 함수</li>
-  <li>__는 특수한 예약 함수나 변수로 사용</li>
-  <li>Class 함수로 self를 반드시 추가해야된다</li>
-  <li>상속 (Inheritance)
-    <ul>
-      <li>부모클래스로부터 속성과 Method를 물려받은 자식 클래스를 생성하는 것</li>
-    </ul>
-  </li>
-  <li>다형성 (Polymorphism)
-    <ul>
-      <li>같은 이름 메소드의 내부 로직을 다르게 작성</li>
-    </ul>
-  </li>
-</ul>
-
-<h5 id="python-4-2-1">[Python 4-2]</h5>
-<h6 id="module-6">Module</h6>
-<ul>
-  <li>프로그램에서의 작은 프로그램 조각들, 모듈을 모아 하나의 큰 프로그램 개발</li>
-  <li>import 문을 사용해서 모듈 호출
-    <h6 id="package-6">Package</h6>
   </li>
   <li>모둘을 모아 놓은 단위, 하나의 프로그램</li>
 </ul>
@@ -664,6 +518,7 @@ a, b, c = t</li>
 <p>######</p>
 
 <h3 id="피어세션-정리-및-학습-회고-2">피어세션 정리 및 학습 회고</h3>
+<p>과제의 난이도가 살짝 올라가 당황스러웠지만, 파이썬에 익숙해지다 보니 어느 정도 감이 잡혔다. 다른 조원들의 코들을 보면서 피드백 할 수 있어 더 뜻 깊다.</p>
 
 <hr />
 
@@ -673,12 +528,7 @@ a, b, c = t</li>
 <h6 id="exception">Exception</h6>
 <ul>
   <li>try ~ except 문법
-    <ul>
-      <li><strong>**</strong><strong>**</strong>** 사진 올리기</li>
-      <li>Built in exception 표 사진 올리기
-        <h6 id="file-handling">File handling</h6>
-      </li>
-    </ul>
+    <h6 id="file-handling">File handling</h6>
   </li>
   <li>디렉토리
     <ul>
@@ -690,7 +540,6 @@ a, b, c = t</li>
     <ul>
       <li>컴퓨터에서 정보를 저장하는 논리적인 단위</li>
       <li>실행, 쓰기, 읽기 등 가능</li>
-      <li><strong>**</strong><strong>**</strong>*** 이미지 넣기</li>
     </ul>
   </li>
 </ul>
@@ -704,7 +553,7 @@ a, b, c = t</li>
       <li>엑셀 양식의 데이터를 프로그램에 상관없이 쓰기위한 데이터 형식</li>
     </ul>
   </li>
-  <li>정규식 (Regular expression) <strong>**</strong>
+  <li>정규식 (Regular expression)
     <ul>
       <li>복잡한 문자열 패턴을 정의하는 문자 표현 공식</li>
       <li>특정한 규칙을 가진 문자열의 집합 추출</li>
@@ -738,6 +587,11 @@ a, b, c = t</li>
 
 <hr />
 
+<h2 id="day-05">Day 05</h2>
+
+<h3 id="강의-복습-내용-4">강의 복습 내용</h3>
+
+<h3 id="피어세션-정리-및-학습-회고-4">피어세션 정리 및 학습 회고</h3>
 
                 </div>
             </section>
